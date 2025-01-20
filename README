@@ -1,1 +1,138 @@
-Api Project
+# API de Gerenciamento de Usuários
+
+Esta é uma API simples para gerenciar dados de usuários, incluindo nome e número de telefone. É ideal para estudos e desenvolvimento inicial de APIs.
+
+## Funcionalidades
+
+- Listar todos os usuários
+- Buscar um usuário por ID
+- Adicionar um novo usuário
+- Atualizar os dados de um usuário existente
+- Deletar um usuário
+
+## Tecnologias Utilizadas
+
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+
+## Instalação e Configuração
+
+### Pré-requisitos
+
+- Node.js instalado ([guia de instalação](https://nodejs.org/))
+- NPM (instalado junto com o Node.js)
+
+### Passos para executar o projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd nome-do-repositorio
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor:
+   ```bash
+   npm start
+   ```
+
+5. Acesse a API em [http://localhost:3000](http://localhost:3000).
+
+## Endpoints
+
+### **GET /users**
+
+Retorna a lista de todos os usuários.
+
+- **Resposta:** 
+  ```json
+  [
+    {
+      "id": 1,
+      "name": "Juliana Martins",
+      "phone_number": "(70) 9782-7339"
+    },
+    ...
+  ]
+  ```
+
+### **GET /users/:id**
+
+Retorna os dados de um usuário específico.
+
+- **Parâmetros:** 
+  - `id` (obrigatório): ID do usuário.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "id": 1,
+    "name": "Juliana Martins",
+    "phone_number": "(70) 9782-7339"
+  }
+  ```
+
+### **POST /users**
+
+Adiciona um novo usuário.
+
+- **Corpo da Requisição:**
+  ```json
+  {
+    "name": "Novo Usuário",
+    "phone_number": "(XX) XXXX-XXXX"
+  }
+  ```
+- **Resposta de Sucesso:**
+  ```json
+  {
+    "id": 11,
+    "name": "Novo Usuário",
+    "phone_number": "(XX) XXXX-XXXX"
+  }
+  ```
+
+### **PUT /users/:id**
+
+Atualiza os dados de um usuário existente.
+
+- **Parâmetros:** 
+  - `id` (obrigatório): ID do usuário.
+- **Corpo da Requisição:**
+  ```json
+  {
+    "name": "Nome Atualizado",
+    "phone_number": "(XX) XXXX-XXXX"
+  }
+  ```
+- **Resposta de Sucesso:**
+  ```json
+  {
+    "id": 1,
+    "name": "Nome Atualizado",
+    "phone_number": "(XX) XXXX-XXXX"
+  }
+  ```
+
+### **DELETE /users/:id**
+
+Remove um usuário da lista.
+
+- **Parâmetros:** 
+  - `id` (obrigatório): ID do usuário.
+- **Resposta:** 
+  - Código HTTP 204 (sem conteúdo).
+
+## Melhorias Futuras
+
+- Adicionar autenticação com JWT.
+- Implementar integração com banco de dados (MongoDB ou PostgreSQL).
+- Adicionar testes automatizados.
+- Criar documentação interativa com Swagger ou Postman.
