@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Juliana Martins",
+      "phone_number": "(70) 9782-7339"
+    },
+    {
+      "id": 2,
+      "name": "Juliana Pereira",
+      "phone_number": "(75) 7234-1186"
+    },
+    {
+      "id": 3,
+      "name": "João Martins",
+      "phone_number": "(10) 1456-1995"
+    },
+    {
+      "id": 4,
+      "name": "Carlos Oliveira",
+      "phone_number": "(69) 5013-9017"
+    },
+    {
+      "id": 5,
+      "name": "Carla Oliveira",
+      "phone_number": "(10) 2295-2766"
+    },
+    {
+      "id": 6,
+      "name": "Rafael Martins",
+      "phone_number": "(17) 3084-7263"
+    },
+    {
+      "id": 7,
+      "name": "João Almeida",
+      "phone_number": "(31) 9343-3674"
+    },
+    {
+      "id": 8,
+      "name": "Ana Lima",
+      "phone_number": "(21) 5894-2710"
+    },
+    {
+      "id": 9,
+      "name": "Lucas Rodrigues",
+      "phone_number": "(92) 2936-2305"
+    },
+    {
+      "id": 10,
+      "name": "Maria Martins",
+      "phone_number": "(26) 5974-9547"
+    }
+  ]
+  
