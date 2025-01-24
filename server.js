@@ -18,7 +18,7 @@ app.get('/users/:id', (req, res) => {
   }
 })
 
-app.post('/users', (req, res)=> {
+app.post('/users/:id', (req, res)=> {
   const {name, phone_number } = req.body
   // Salvar
 
